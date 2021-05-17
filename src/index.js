@@ -17,6 +17,6 @@ app.use(bodyparser.json());
 app.use('/', homeRouter);
 
 const portNumber = process.env.PORT || 8000;
-app.listen(process.env.PORT || 8000, () => {
+app.listen(portNumber, () => {
     console.log(`Server is running on Port ${portNumber}`);
 })
